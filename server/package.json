@@ -1,7 +1,7 @@
 {
-  "name": "bbserver",
+  "name": "server",
   "version": "1.0.0",
-  "description": "Breaking Bread Webserver",
+  "description": "285 Server Portion",
   "main": "./bin/www.js",
   "repository": {
     "type": "git",

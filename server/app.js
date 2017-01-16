@@ -6,7 +6,7 @@ var index = require('./routes/index');
 var apiRoutes = require('./routes/APIRoutes');
 
 app.use(logger('dev'));
-app.use(express.static('../app'));
+app.use(express.static('../PresFiles'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use('/', index);
