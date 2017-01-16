@@ -1,0 +1,24 @@
+{
+  "name": "bbserver",
+  "version": "1.0.0",
+  "description": "Breaking Bread Webserver",
+  "main": "./bin/www.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atreayou/Breaking-Bread-Web-Service.git"
+  },
+  "scripts": {
+    "test": "node dbtest.js",
+    "start": "node ./bin/www.js"
+  },
+  "author": "Nicholas Moran",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "crypto": "0.0.3",
+    "express": "^4.14.0",
+    "jsonwebtoken": "^7.1.6",
+    "morgan": "^1.7.0",
+    "mysql": "^2.11.1"
+  }
+}
