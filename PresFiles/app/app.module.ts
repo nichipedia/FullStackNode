@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {HttpModule } from '@angular/http';
 
+import { ApiService } from './shared/Api.service';
 import { AppComponent }  from './app.component';
 import { SignInComponent } from './sign_in/sign-in.component';
 import { SignUpComponent } from './sign_up/sign-up.component';
@@ -15,9 +17,11 @@ import { HomeComponent } from './home/home.component';
                                    { path: 'sign-up', component: SignUpComponent},
                                    { path: '', redirectTo: 'home', pathMatch: 'full'},
                                    { path: '**', component: PageNotFoundComponent}],
-                                   { useHash: true}) 
+                                   { useHash: true}),
+             HttpModule 
             ],
   declarations: [ AppComponent, SignUpComponent, SignInComponent, PageNotFoundComponent, HomeComponent ],
+  providers: [ ApiService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
