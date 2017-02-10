@@ -47,3 +47,14 @@ bower_components
 typings
 PresFiles/app/**/*.js
 PresFiles/app/**/*.map
+
+# Mac Disaster
+.DS_Store
+._*
+
+#IDE files
+.vscode
+.idea
+
+# Ignore vim
+*.swp
